@@ -1,0 +1,18 @@
+<form
+        data-request="{{ __SELF__ }}::onSendEmail"
+        data-request-update="'{{ __SELF__ }}::success': '#result'"
+        data-request-success="$('.form-control').val('')">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Send Message Form</h3>
+        </div>
+        <div class="panel-body">
+            <input type="text" class="form-control" value="" name="sender" placeholder="What is your name?">
+            <input type="email" class="form-control" value="" name="email" placeholder="What is your feedback email?">
+            <textarea class="form-control" value="" name="message" placeholder="Type your message here"></textarea>
+            <button type="submit" class="btn btn btn-primary">Send</button>
+        </div>
+        <span id="result">
+        </span>
+    </div>
+</form>

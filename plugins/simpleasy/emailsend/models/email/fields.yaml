@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    sender:
+        label: Sender
+        type: text
+    email:
+        label: E-mail
+        type: text
+    message:
+        label: Message
+        type: textarea
