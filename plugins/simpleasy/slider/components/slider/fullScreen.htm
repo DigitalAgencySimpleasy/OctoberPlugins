@@ -1,0 +1,14 @@
+<div class="simpleSlick" data-layout="fullscreen">
+    <!--{% set layout = getSlides.layout %}-->
+
+    {% for slide in slider.getSlides.slides %}
+    <div class="slickSlide">
+        <img src="{{ slide.slide_image.path }}" alt="{{ slide.header }}">
+        <div class="caption">
+            <h4>{{ slide.header }}</h4>
+            <p>{{ slide.description | raw }}</p>
+            <a href="http://{{ slide.link }}" class="button hollow">{{ slide.link_title }}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

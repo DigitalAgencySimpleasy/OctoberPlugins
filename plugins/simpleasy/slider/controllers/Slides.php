@@ -1,12 +1,12 @@
-<?php namespace Simpleasy\Emailsend\Controllers;
+<?php namespace Simpleasy\Slider\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Emails Back-end Controller
+ * Slides Back-end Controller
  */
-class Emails extends Controller
+class Slides extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class Emails extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Simpleasy.Emailsend', 'emailsend', 'emails');
+        BackendMenu::setContext('Simpleasy.Slider', 'slider', 'slides');
     }
 }

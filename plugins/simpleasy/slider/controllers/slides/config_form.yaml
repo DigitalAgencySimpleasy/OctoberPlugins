@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slide
+
+# Model Form Field configuration
+form: $/simpleasy/slider/models/slide/fields.yaml
+
+# Model Class name
+modelClass: Simpleasy\Slider\Models\Slide
+
+# Default redirect location
+defaultRedirect: simpleasy/slider/slides
+
+# Create page
+create:
+    title: Create Slide
+    redirect: simpleasy/slider/slides/update/:id
+    redirectClose: simpleasy/slider/slides
+
+# Update page
+update:
+    title: Edit Slide
+    redirect: simpleasy/slider/slides
+    redirectClose: simpleasy/slider/slides
+
+# Preview page
+preview:
+    title: Preview Slide

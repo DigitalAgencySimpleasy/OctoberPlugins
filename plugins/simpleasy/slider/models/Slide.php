@@ -1,17 +1,17 @@
-<?php namespace Simpleasy\Emailsend\Models;
+<?php namespace Simpleasy\Slider\Models;
 
 use Model;
 
 /**
- * Email Model
+ * Slide Model
  */
-class Email extends Model
+class Slide extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'simpleasy_emailsend_emails';
+    public $table = 'simpleasy_slider_slides';
 
     /**
      * @var array Guarded fields
@@ -33,7 +33,7 @@ class Email extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = ['slide_image' => ['System\Models\File']];
     public $attachMany = [];
 
 }

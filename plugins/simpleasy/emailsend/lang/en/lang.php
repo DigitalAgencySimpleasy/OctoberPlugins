@@ -8,5 +8,6 @@ return [
         'label' => 'Emails',
         'delete_selected_confirm' => 'Are you sure you want to delete selected items?',
         'new_email' => 'Add new email',
+        'form_title' => 'Send Message Form',
     ],
 ];

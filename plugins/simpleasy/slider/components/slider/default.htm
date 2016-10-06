@@ -1,0 +1,9 @@
+{% if __SELF__.getSlides.layout == 'fullscreen' %}
+    {% partial '@fullScreen' %}
+{% elseif __SELF__.getSlides.layout == 'half' %}
+    {% partial '@half' %}
+{% elseif __SELF__.getSlides.layout == 'frame' %}
+    {% partial '@frame' %}
+{% else %}
+    {% partial '@fullSide' %}
+{% endif %}

@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/simpleasy/emailsend/models/email/columns.yaml
+list: $/simpleasy/slider/models/slide/columns.yaml
 
 # Model Class name
-modelClass: Simpleasy\Emailsend\Models\Email
+modelClass: Simpleasy\Slider\Models\Slide
 
 # List Title
-title: Manage Emails
+title: Manage Slides
 
 # Link URL for each record
-recordUrl: simpleasy/emailsend/emails/update/:id
+recordUrl: simpleasy/slider/slides/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
@@ -32,7 +32,7 @@ showSorting: true
 #     direction: desc
 
 # Display checkboxes next to each record
-showCheckboxes: true
+# showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:

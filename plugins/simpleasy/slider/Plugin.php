@@ -1,10 +1,10 @@
-<?php namespace Simpleasy\Emailsend;
+<?php namespace Simpleasy\Slider;
 
 use Backend;
 use System\Classes\PluginBase;
 
 /**
- * emailsend Plugin Information File
+ * Slider Plugin Information File
  */
 class Plugin extends PluginBase
 {
@@ -17,10 +17,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'emailsend',
-            'description' => 'No description provided yet...',
-            'author'      => 'simpleasy',
-            'icon'        => 'icon-envelope-o'
+            'name'        => 'Slider',
+            'description' => 'Slider by Simpleasy',
+            'author'      => 'Simpleasy',
+            'icon'        => 'icon-desktop'
         ];
     }
 
@@ -54,7 +54,7 @@ class Plugin extends PluginBase
 //        return []; // Remove this line to activate
 
         return [
-            'Simpleasy\Emailsend\Components\Emails' => 'emails',
+            'Simpleasy\Slider\Components\Slider' => 'slider',
         ];
     }
 
@@ -68,8 +68,8 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'simpleasy.emailsend.some_permission' => [
-                'tab' => 'emailsend',
+            'simpleasy.slider.some_permission' => [
+                'tab' => 'Slider',
                 'label' => 'Some permission'
             ],
         ];
@@ -85,11 +85,11 @@ class Plugin extends PluginBase
 //        return []; // Remove this line to activate
 
         return [
-            'emailsend' => [
-                'label'       => 'emailsend',
-                'url'         => Backend::url('simpleasy/emailsend/emails'),
-                'icon'        => 'icon-envelope-o',
-                'permissions' => ['simpleasy.emailsend.*'],
+            'slider' => [
+                'label'       => 'Slider',
+                'url'         => Backend::url('simpleasy/slider/slides'),
+                'icon'        => 'icon-desktop',
+                'permissions' => ['simpleasy.slider.*'],
                 'order'       => 500,
             ],
         ];

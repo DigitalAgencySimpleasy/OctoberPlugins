@@ -1,0 +1,38 @@
+<form data-request="{{ __SELF__ }}::onSendEmail"
+      data-request-update="'{{ __SELF__ }}::success': '#result'"
+      data-request-success="$('.form-control').val('')">
+    <div class="callout">
+        <div class="row">
+            <div id="result">
+                <h3>Send Message Form</h3>
+                <div class="columns small-12 medium-3 large-2">
+                    <label for="sender" class="text-middle text-left">Your Name</label>
+                </div>
+
+                <div class="columns small-12 medium-9 large-10">
+                    <input type="text" value="" id="sender" name="sender" placeholder="What is your name?" required>
+                </div>
+
+                <div class="columns small-12 medium-3 large-2">
+                    <label for="email" class="text-middle text-left">Your Email</label>
+                </div>
+
+                <div class="columns small-12 medium-9 large-10">
+                    <input type="email" value="" id="email" name="email" placeholder="What is your feedback email?" required>
+                </div>
+
+                <div class="columns small-12 medium-3 large-2">
+                    <label for="message" class="text-middle text-left">Your Message</label>
+                </div>
+
+                <div class="columns small-12 medium-9 large-10">
+                    <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                </div>
+
+                <div class="columns text-right">
+                    <button type="submit" class="success button"><i class="fa fa-paper-plane"></i> Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
