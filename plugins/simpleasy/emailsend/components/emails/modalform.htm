@@ -7,7 +7,7 @@
     <div class="row">
         <form data-request="{{ __SELF__ }}::onSendEmail"
               data-request-update="'{{ __SELF__ }}::success': '#result'"
-              data-request-success="$('.form-control').val('')">
+              data-request-success="$('.form-control').val(''); $('.emailSend').addClass('success');" class="emailSend">
             <div id="result">
                 <div class="columns small-12 medium-4 large-3">
                     <label for="sender" class="text-middle text-left">Your Name</label>

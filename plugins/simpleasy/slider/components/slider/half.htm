@@ -5,7 +5,7 @@
 
             {% for slide in slider.getSlides.slides %}
             <div class="slickSlide">
-                <img src="{{ slide.slide_image.path }}" alt="{{ slide.header }}">
+                <img src="{{ slide.slide_image.thumb(50,50,crop) }}" alt="{{ slide.header }}">
                 <div class="caption">
                     <h4>{{ slide.header }}</h4>
                     <p>{{ slide.description | raw }}</p>

@@ -34,4 +34,10 @@ class Slider extends ComponentBase
         return ['layout' => $layout, 'slides' => $slides];
     }
 
+    public function onRun()
+    {
+        $this->addJs('/plugins/simpleasy/slider/assets/js/slick.min.js');
+        $this->addJs('/plugins/simpleasy/slider/assets/js/slickSlider.js');
+    }
+
 }
