@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    title:
+        label: Title
+        type: text
+
+    slug:
+        label: Slug
+        preset: title
+
+    text:
+        label: Text
+        type: richeditor
+
+    image:
+            label: Image
+            type: fileupload
+            mode: image
+            imageWidth: 300
+            imageHeight: 200

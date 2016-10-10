@@ -85,8 +85,6 @@ class Emails extends ComponentBase
                 $message->to($this->property('email'), 'Me');
 //                $message->subject('This is a reminder');
             });
-
-//        mail($emailTo, $emailSender, $emailMessage);
     }
 
     /** Delete items from the list. Ajax call **/

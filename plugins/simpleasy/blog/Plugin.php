@@ -1,10 +1,10 @@
-<?php namespace Simpleasy\Emailsend;
+<?php namespace Simpleasy\Blog;
 
 use Backend;
 use System\Classes\PluginBase;
 
 /**
- * emailsend Plugin Information File
+ * Blog Plugin Information File
  */
 class Plugin extends PluginBase
 {
@@ -17,10 +17,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'emailsend',
-            'description' => 'No description provided yet...',
-            'author'      => 'simpleasy',
-            'icon'        => 'icon-envelope-o'
+            'name'        => 'Blog',
+            'description' => 'Simple Blog by Simpleasy',
+            'author'      => 'Simpleasy',
+            'icon'        => 'icon-align-left'
         ];
     }
 
@@ -51,10 +51,10 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-//        return []; // Remove this line to activate
+        return []; // Remove this line to activate
 
         return [
-            'Simpleasy\Emailsend\Components\Emails' => 'emails',
+            'Simpleasy\Blog\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -65,12 +65,12 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-//        return []; // Remove this line to activate
+        return []; // Remove this line to activate
 
         return [
-            'simpleasy.emailsend.access_emails' => [
-                'tab' => 'emailsend',
-                'label' => 'Доступ к письмам'
+            'simpleasy.blog.some_permission' => [
+                'tab' => 'Blog',
+                'label' => 'Some permission'
             ],
         ];
     }
@@ -85,11 +85,11 @@ class Plugin extends PluginBase
 //        return []; // Remove this line to activate
 
         return [
-            'emailsend' => [
-                'label'       => 'emailsend',
-                'url'         => Backend::url('simpleasy/emailsend/emails'),
-                'icon'        => 'icon-envelope-o',
-                'permissions' => ['simpleasy.emailsend.*'],
+            'blog' => [
+                'label'       => 'Blog',
+                'url'         => Backend::url('simpleasy/blog/articles'),
+                'icon'        => 'icon-file-text-o',
+                'permissions' => ['simpleasy.blog.*'],
                 'order'       => 500,
             ],
         ];

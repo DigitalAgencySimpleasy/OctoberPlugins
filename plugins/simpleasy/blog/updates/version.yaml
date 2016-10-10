@@ -1,0 +1,4 @@
+1.0.1:
+- First version of Blog
+- create_articles_table.php
+- create_categories_table.php
