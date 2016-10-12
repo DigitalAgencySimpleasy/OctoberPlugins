@@ -1,0 +1,27 @@
+title = 'Blog Post'
+url = '/blog/:slug'
+layout = 'default'
+[posts]
+==
+
+use Simpleasy\Blog\Models\Post;
+
+function onStart(){
+    $slug = $this->param('slug');
+    $this['post'] = Post::where('slug', '=', $slug)->first();
+    if( !$this['post'] )
+    return Redirect::to('/404');
+}
+==
+
+<div class="media-object stack-for-small">
+    <div class="media-object-section">
+        <div class="thumbnail">
+            <img src="{{ post.image.thumb(300, auto) }}" alt="{{ post.title }}" width="300">
+        </div>
+    </div>
+    <div class="media-object-section">
+        <h4>{{ post.title }}</h4>
+        {{ post.text|raw }}
+    </div>
+</div>
