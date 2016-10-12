@@ -3,15 +3,15 @@
 use Model;
 
 /**
- * Article Model
+ * Post Model
  */
-class Article extends Model
+class Post extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'simpleasy_blog_articles';
+    public $table = 'simpleasy_blog_posts';
 
     /**
      * @var array Guarded fields

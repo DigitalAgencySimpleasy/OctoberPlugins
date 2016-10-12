@@ -51,10 +51,10 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
+//        return []; // Remove this line to activate
 
         return [
-            'Simpleasy\Blog\Components\MyComponent' => 'myComponent',
+            'Simpleasy\Blog\Components\Posts' => 'posts',
         ];
     }
 

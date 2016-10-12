@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/simpleasy/blog/models/article/columns.yaml
+list: $/simpleasy/blog/models/post/columns.yaml
 
 # Model Class name
-modelClass: Simpleasy\Blog\Models\Article
+modelClass: Simpleasy\Blog\Models\Posts
 
 # List Title
-title: Manage Articles
+title: Manage Posts
 
 # Link URL for each record
-recordUrl: simpleasy/blog/articles/update/:id
+recordUrl: simpleasy/blog/posts/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

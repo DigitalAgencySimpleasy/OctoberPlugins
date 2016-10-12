@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Article
+
+# Model Form Field configuration
+form: $/simpleasy/blog/models/post/fields.yaml
+
+# Model Class name
+modelClass: Simpleasy\Blog\Models\Post
+
+# Default redirect location
+defaultRedirect: simpleasy/blog/posts
+
+# Create page
+create:
+    title: Create Post
+    redirect: simpleasy/blog/posts/update/:id
+    redirectClose: simpleasy/blog/posts
+
+# Update page
+update:
+    title: Edit Post
+    redirect: simpleasy/blog/posts
+    redirectClose: simpleasy/blog/posts
+
+# Preview page
+preview:
+    title: Preview Post

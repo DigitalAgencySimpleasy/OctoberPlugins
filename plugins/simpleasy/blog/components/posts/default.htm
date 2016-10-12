@@ -1,0 +1,16 @@
+{% set posts = posts.getPosts %}
+
+<div class="row">
+    {% for post in posts %}
+    <div class="columns small-6 medium-4 large-3{% if loop.last %} end{% endif %}">
+        <div class="thumbnail">
+            <img src="{{ post.image.thumb(400, 300, {'mode': 'crop'}) }}" alt="{{ post.title }}">
+            <h4>{{ post.title [:12]|trim }}{% if post.title|length > 13 %}...{% endif %}</h4>
+            <p>{{ post.text [:36]|striptags|trim }}{% if post.text|length > 37 %}...{% endif %}</p>
+            <a href="{{ this.page.url }}/{{ post.slug }}" class="button hollow">Подробнее</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    {{ posts.render|raw }}
+</div>
