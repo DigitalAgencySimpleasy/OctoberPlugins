@@ -20,6 +20,6 @@ class Posts extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Simpleasy.Blog', 'blog', 'articles');
+        BackendMenu::setContext('Simpleasy.Blog', 'blog', 'posts');
     }
 }

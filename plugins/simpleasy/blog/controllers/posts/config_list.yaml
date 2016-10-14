@@ -6,7 +6,7 @@
 list: $/simpleasy/blog/models/post/columns.yaml
 
 # Model Class name
-modelClass: Simpleasy\Blog\Models\Posts
+modelClass: Simpleasy\Blog\Models\Post
 
 # List Title
 title: Manage Posts

@@ -21,7 +21,7 @@ class Post extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['title', 'text'];
 
     /**
      * @var array Relations
